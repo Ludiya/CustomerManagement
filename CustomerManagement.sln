@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerManagement", "Custo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerAPI.Tests", "CustomerAPI.Tests\CustomerAPI.Tests.csproj", "{DCD4ABC1-DD6C-42E2-A9AC-E5A1C21F3707}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCApp", "..\SampleAPI\MVCApp\MVCApp.csproj", "{5A9AB8EC-921F-44DF-B620-3BBDA82B52B0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCApp", "MVCApp\MVCApp.csproj", "{5A9AB8EC-921F-44DF-B620-3BBDA82B52B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
