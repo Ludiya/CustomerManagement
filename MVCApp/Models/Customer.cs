@@ -9,6 +9,7 @@ namespace MVCApp.Models
     public class Customer
     {
         [Key]
+        [ScaffoldColumn(false)]
         public int CustomerId { get; set; }
         [Required]
         [MaxLength(100)]

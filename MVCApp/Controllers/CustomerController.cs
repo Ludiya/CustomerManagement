@@ -79,7 +79,7 @@ namespace MVCApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "Name,Address,Gender,Company,Designation")] Customer customer)
+        public async Task<ActionResult> Create([Bind(Include = "FirstName,LastName,Email,PhoneNumber,Gender,UserName,Password")] Customer customer)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace MVCApp.Controllers
                 {
                     client.BaseAddress = new Uri(Baseurl);
 
-                    var response = await client.PostAsJsonAsync("Customer/Post", customer);
+                    var response = await client.PostAsJsonAsync("Customer", customer);
                     if (response.IsSuccessStatusCode)
                     {
                         return RedirectToAction("Index");
